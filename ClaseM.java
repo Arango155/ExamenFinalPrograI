@@ -85,11 +85,16 @@ public class ClaseM {
                  }
                  
      
+            case 3 -> {
+            calculador.posicion();
+    
+            break;
             
+                 }
                  
                  
                case 0 -> {
-            System.out.println("Gracias por haber usado el programa");
+             JOptionPane.showMessageDialog(null, "Gracias por haber usado el programa");
     
             break;
                  } 
@@ -157,7 +162,7 @@ public class ClaseM {
            
            
            
-            default: System.out.println("\nOpcion invalida");
+            default: JOptionPane.showMessageDialog(null, "Opcion invalida");
 
         }
         

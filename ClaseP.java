@@ -79,6 +79,27 @@ public class ClaseP  {
         JOptionPane.showMessageDialog(null, string);
         
     }
+    
+     void posicion() {
+        
+            String string="";
+            
+                   int pos=-1;
+        Scanner leer = new Scanner(System.in);
+        
+        String n = JOptionPane.showInputDialog("Ingrese el departamento: "); 
+        for (int i=0; i<vectorTransaccionesD.length;i++){
+            if(vectorTransaccionesD[i] == null ? n == null : vectorTransaccionesD[i].equals(n)){
+            pos=i;}
+        }
+        if(pos==-1){
+        string+="No se encontro el departamento";
+        
+        }else{
+        string+="La posicion de "+n+" es: "+pos;} 
+            
+          JOptionPane.showMessageDialog(null, string);
+            }
  
    
 }
