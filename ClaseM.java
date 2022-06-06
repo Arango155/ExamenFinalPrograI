@@ -91,6 +91,14 @@ public class ClaseM {
             break;
             
                  }
+            
+            case 5 -> {
+            
+                      calculador.mostrar();
+    
+            break;
+            
+                 }
                  
                  
                case 0 -> {
