@@ -52,7 +52,23 @@ public class ClaseC {
       JOptionPane.showMessageDialog(null, string);
    }
     
+   void verificar() {
+         
+       String string="";
+      for(int i=0;i<lista.size();i++){
+          
+          String busqueda = JOptionPane.showInputDialog("Ingrese la busqueda "); 
+          boolean existe = lista.get(i).getNombre().contains(busqueda); 
+          if (existe){
+        string+="El elemento SI existe";
+        }else{
+        string+="El elemento NO existe";}
+      }
+      
+    JOptionPane.showMessageDialog(null, string);
+   
 
+     }
 
    
 }

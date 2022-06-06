@@ -125,10 +125,14 @@ public class ClaseM {
               case 2:
              obj.mostrarTransacciones();
              break; 
-               
-   
-            
-        
+
+        case 4:
+                 
+             obj.verificar();
+             
+             
+             break;
+             
           case 0:
              JOptionPane.showMessageDialog(null, "Gracias por haber usado el programa");
              break;
