@@ -125,12 +125,16 @@ public class ClaseM {
               case 2:
              obj.mostrarTransacciones();
              break; 
-
+             
+             case 3:
+             obj.clearListBook();
+             JOptionPane.showMessageDialog(null, "Los datos de la lista han sido eliminados");
+             break;
+             
         case 4:
                  
              obj.verificar();
-             
-             
+
              break;
              
           case 0:

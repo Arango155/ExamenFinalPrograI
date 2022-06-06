@@ -70,5 +70,7 @@ public class ClaseC {
 
      }
 
-   
+     public void clearListBook(){
+      lista.clear();
+   }
 }
