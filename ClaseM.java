@@ -25,7 +25,7 @@ public class ClaseM {
     int municipio;
     int op2;
     int op;
-    ClaseC obj = new ClaseC();
+    ClaseC objeto = new ClaseC();
     Scanner scanner = new Scanner(System.in);
     double c,cc,t,cg;
     String n,a,co,nc,d;
@@ -119,21 +119,21 @@ public class ClaseM {
        switch(opcion){
            
           case 1:
-              obj.Departamento();
+              objeto.Departamento();
              break;
 
               case 2:
-             obj.mostrarTransacciones();
+             objeto.mostrarTransacciones();
              break; 
              
              case 3:
-             obj.clearListBook();
+             objeto.clearListBook();
              JOptionPane.showMessageDialog(null, "Los datos de la lista han sido eliminados");
              break;
              
         case 4:
                  
-             obj.verificar();
+             objeto.verificar();
 
              break;
              

@@ -34,10 +34,6 @@ public class ClaseC {
      lista.add(clase);
      
    }
-   
-
-   
-   
     public void mostrarTransacciones(){
       String string="";
       for(int i=0;i<lista.size();i++){
