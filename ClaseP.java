@@ -27,11 +27,11 @@ public class ClaseP  {
     int pos;
     
      public ClaseP(){
-        vectorTransacciones= new String[5];
+        vectorTransacciones= new String[7];
         this.indiceVector=0;
-        vectorTransaccionesD= new String[5];
+        vectorTransaccionesD= new String[7];
         this.indiceVectorD=0;
-        vectorTransaccionesM= new int[5];
+        vectorTransaccionesM= new int[7];
         this.indiceVectorM=0;
         
  
@@ -61,27 +61,40 @@ public class ClaseP  {
        void mostrar() {
            String string="";
              try{     
-        for(int i=1; i<10;i++)
+        for(int i=0; i<10;i++)
         {
-           int municipio = vectorTransaccionesM[i] ;
+           
            
         if(i%2==0)
-            if(municipio>4)
-   
-           
-        if(municipio>4)
-        
-            
-     string+="El departamento " +vectorTransaccionesD[i]+" tiene mas de 4 municipios y esta en una posicion par";
+            if(vectorTransaccionesM[i]>4)
+                {
+     string+="\nEl departamento " +vectorTransaccionesD[i]+" tiene mas de 4 municipios y esta en una posicion par";
 
             }
      
-            }catch(Exception e){
+        } }catch(Exception e){
             System.out.println(e.getMessage());
             }
     
       
        JOptionPane.showMessageDialog(null, string);
+       }
+       
+       void inicial (){
+        String string="";
+            
+                   
+        Scanner leer = new Scanner(System.in);
+        
+        String inicial = JOptionPane.showInputDialog("Ingrese la inicial del departamento a buscar: "); 
+        for (int i=0; i<vectorTransaccionesD.length;i++){
+            if(vectorTransaccionesD[i] == null ? inicial == null : vectorTransaccionesD[i].contains(inicial))
+            {
+                string+="La posicion del departamento con inicial "+inicial+" es: "+vectorTransaccionesD[i];
+            }else{}
+        } 
+            
+          JOptionPane.showMessageDialog(null, string);
        }
        
  

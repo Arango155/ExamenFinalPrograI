@@ -67,9 +67,9 @@ public class ClaseM {
          case 1 -> { 
              
               
-             String departamento= JOptionPane.showInputDialog("\nDepartamento: ");
-             municipio=Byte.parseByte(JOptionPane.showInputDialog("\nNumero de municipios: "));
-             String cabecera=JOptionPane.showInputDialog("\nCabecera: ");
+             String departamento= JOptionPane.showInputDialog("\nDepartamento");
+             municipio=Byte.parseByte(JOptionPane.showInputDialog("\nNumero de municipios"));
+             String cabecera=JOptionPane.showInputDialog("\nCabecera");
              System.out.println();
              System.out.print(calculador.departamento(departamento,municipio,cabecera));
                break;
@@ -87,6 +87,14 @@ public class ClaseM {
      
             case 3 -> {
             calculador.posicion();
+    
+            break;
+            
+                 }
+            
+            case 4 -> {
+            
+                      calculador.inicial();
     
             break;
             
